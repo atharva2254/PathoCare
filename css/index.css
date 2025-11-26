@@ -1,0 +1,122 @@
+img {
+  border-radius: 20px;
+}
+
+.active {
+  color: lightgray;
+}
+
+.card {
+  box-shadow: 5px 5px 10px rgb(215, 213, 213);
+}
+
+.navbar {
+  background: linear-gradient(to right, #dce35b, #45b649);
+}
+
+.health-risk-img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.d_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* From Uiverse.io by barisdogansutcu */
+.btn {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: black;
+  border: 2px solid grey;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.btn:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/* From Uiverse.io by BHARGAVPATEL1244 */
+.cart-btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #66ff66;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.cart-btn span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.cart-btn:hover span {
+  color: black;
+}
+
+.cart-btn::before,
+.cart-btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cart-btn::before {
+  content: "";
+  background: #000;
+  color: white;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cart-btn:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+}

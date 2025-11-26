@@ -1,0 +1,16 @@
+p {
+  font-size: 18px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+}
+
+.card-text {
+  font-size: 15px;
+}
