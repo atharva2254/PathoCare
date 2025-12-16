@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/Book_Test.css">
+    <link rel="stylesheet" href="/css/Health_Packages.css">
+    
+</head>
+<body>
+    <header>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/pathocare_logo.png" alt="PathoCare" width="75" height="50" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tests/Services</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Health Packages</a>
+            </li> -->
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="health.html">Health Packages </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Book Test</a>
+            </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Labs" aria-label="Search" />
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+ 
+
+<!-- TESTS WITH IMAGES & DETAILS -->
+<section class="my-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Select Lab Test</h2>
+      <p class="text-muted fs-5">Click on a test to view full details & pricing</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Blood Test -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card test-card text-center border-0 shadow-lg h-100"
+          onclick="showTest(
+            'Blood Test',
+            'Complete Blood Count (CBC), Hemoglobin, RBC, WBC',
+            '₹500',
+            'Fasting not required',
+            'images/health_risk1.png'
+          )">
+          <span class="badge bg-success position-absolute top-0 end-0 m-2">Popular</span>
+          <img src="/images/health_risk1.png" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Blood Test</h5>
+            <p class="text-muted small">Overall health analysis</p>
+            <p class="fw-bold text-primary mb-0">₹500</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diabetes Test -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card test-card text-center border-0 shadow-lg h-100"
+          onclick="showTest(
+            'Diabetes Test',
+            'FBS, PPBS, HbA1c',
+            '₹600',
+            '8–10 hours fasting required',
+            'images/health_risk2.png'
+          )">
+          <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2">Fasting</span>
+          <img src="images/health_risk2.png" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Diabetes Test</h5>
+            <p class="text-muted small">Blood sugar levels</p>
+            <p class="fw-bold text-primary mb-0">₹600</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thyroid Test -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card test-card text-center border-0 shadow-lg h-100"
+          onclick="showTest(
+            'Thyroid Test',
+            'T3, T4, TSH',
+            '₹700',
+            'Fasting not required',
+            'images/health_risk3.png'
+          )">
+          <img src="images/health_risk3.png" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Thyroid Test</h5>
+            <p class="text-muted small">Hormonal balance</p>
+            <p class="fw-bold text-primary mb-0">₹700</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heart Test -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card test-card text-center border-0 shadow-lg h-100"
+          onclick="showTest(
+            'Heart Test',
+            'Lipid Profile, Cholesterol, ECG',
+            '₹1200',
+            '10–12 hours fasting required',
+            'images/health_risk4.png'
+          )">
+          <span class="badge bg-danger position-absolute top-0 end-0 m-2">Critical</span>
+          <img src="images/health_risk4.png" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Heart Test</h5>
+            <p class="text-muted small">Cardiac risk check</p>
+            <p class="fw-bold text-primary mb-0">₹1200</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="my-5 d-none" id="testDetails">
+  <div class="container">
+    <div class="card shadow-xl border-0 rounded-5 p-3">
+      <div class="card-body row align-items-center g-4">
+
+        <div class="col-md-4 text-center">
+          <img id="testImg" class="img-fluid p-3" style="max-height:200px;">
+        </div>
+
+        <div class="col-md-8">
+          <h3 class="fw-bold text-primary mb-3" id="testName"></h3>
+
+          <ul class="list-unstyled fs-6">
+            <li class="mb-2">
+              ✅ <strong>Includes:</strong> <span id="testIncludes"></span>
+            </li>
+            <li class="mb-2">
+              💰 <strong>Price:</strong> <span id="testPrice"></span>
+            </li>
+            <li class="mb-2">
+              ⏱️ <strong>Preparation:</strong> <span id="testPrep"></span>
+            </li>
+          </ul>
+
+          <div class="mt-4">
+           <a href="#" class="cart-btn me-3" onclick="bookTest()">
+              <span>Book Test Now</span>
+          </a>
+
+           <a href="#" class="cart-btn" onclick="addAnotherTest()">
+         <span>Add Another Test</span>
+        </a>
+
+
+
+
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+function showTest(name, includes, price, prep, img) {
+  document.getElementById("testName").innerText = name;
+  document.getElementById("testIncludes").innerText = includes;
+  document.getElementById("testPrice").innerText = price;
+  document.getElementById("testPrep").innerText = prep;
+  document.getElementById("testImg").src = img;
+
+  const details = document.getElementById("testDetails");
+  details.classList.remove("d-none");
+  details.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function bookTest() {
+  alert(" Test selected successfully!");
+}
+
+function addAnotherTest() {
+  alert("You can select another test.");
+}
+
+
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</html>
