@@ -27,9 +27,15 @@ h1{
     height: 400px;
     width: 700px;
     border-radius: 30px;
-    box-shadow: 8px 8px 7px grey;
+    box-shadow: 8px 8px 7px rgb(220, 252, 220);
     position: relative;
     top: 5px;
     bottom: 5px;
+}
+.list{
+    font-size: 30px;
+}
+.f_size{
+    font-size: 45px;
 }
 
