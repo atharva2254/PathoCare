@@ -1,0 +1,31 @@
+/* TEST CARD */
+.test-card {
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.35s ease;
+}
+
+.test-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* IMAGE LOGICAL EFFECT */
+.test-card img {
+  transition: transform 0.4s ease;
+}
+
+.test-card:hover img {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+/* DETAILS CARD SHADOW */
+.shadow-xl {
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* NAV ACTIVE FIX */
+.nav-link.active {
+  font-weight: 600;
+  color: #000 !important;
+}
