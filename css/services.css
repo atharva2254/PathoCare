@@ -1,0 +1,35 @@
+.text_size{
+    font-size: 50px;
+    
+}
+h3{
+    font-size: 25px;
+    display: inline-block;
+    border-bottom: 3px solid lightgreen;
+    padding-bottom: 4px;
+    position: relative;
+    top: 7px;
+    margin-top: 20px;
+}
+p{
+    font-size: 28px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    position: relative;
+    top: 30px;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    
+}
+.img_gt{
+    height: 400px;
+    width: 700px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 7px grey;
+    position: relative;
+    top: 5px;
+    bottom: 5px;
+}
+
