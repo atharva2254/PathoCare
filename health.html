@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/Health_Packages.css">
-    <link rel="stylesheet" href="/css/Book_Test.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Packages</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="/css/Health_Packages.css">
 </head>
+
 <body>
-    <header>
+<header>
     <!-- Navbar Starts -->
+     
     <nav class="navbar navbar-expand-lg" data-bs-theme="light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -33,21 +37,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Tests/Services</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Health Packages</a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Book Test</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="health.html">Health Packages</a>
             </li>
-           
             <li class="nav-item">
               <a class="nav-link" href="book.html">Book Test</a>
             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="health.html">Health Packages </a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -57,10 +54,176 @@
       </div>
     </nav>
   </header>
-  <h1>eknath</h1>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+
+<!-- ================= HEADER ================= -->
+<section class="py-5 text-center bg-light">
+  <div class="container">
+    <h1 class="fw-bold text-primary">Health Checkup Packages</h1>
+    <p class="text-muted fs-5">Affordable complete health checkups for everyone</p>
+  </div>
+</section>
+
+<!-- ================= PACKAGES ================= -->
+<section class="my-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Basic Package -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card package-card shadow-lg h-100 text-center"
+          onclick="showPackage(
+            'Basic Health Package',
+            'CBC, Blood Sugar, Urine Routine',
+            '₹999',
+            'Fasting not required',
+            'images/healthpackage.webp'
+          )">
+
+          <img src="images/healthpackage.webp" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Basic Package</h5>
+            <p class="text-muted small">General health screening</p>
+            <p class="fw-bold text-primary">₹999</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standard Package -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card package-card shadow-lg h-100 text-center"
+          onclick="showPackage(
+            'Standard Health Package',
+            'CBC, Sugar, Thyroid, Lipid Profile',
+            '₹1999',
+            '8 hours fasting required',
+            'images/healthpackage2.webp'
+          )">
+
+          <span class="badge bg-success position-absolute top-0 end-0 m-2">Most Popular</span>
+          <img src="images/healthpackage2.webp" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Standard Package</h5>
+            <p class="text-muted small">Complete body check</p>
+            <p class="fw-bold text-primary">₹2999</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Package -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card package-card shadow-lg h-100 text-center"
+          onclick="showPackage(
+            'Premium Health Package',
+            'CBC, Sugar, Thyroid, Lipid, Liver, Kidney',
+            '₹2999',
+            '10–12 hours fasting required',
+            'images/healthpackage3.webp'
+          )">
+
+          <img src="images/healthpackage3.webp" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Premium Package</h5>
+            <p class="text-muted small">Advanced diagnostics</p>
+            <p class="fw-bold text-primary">₹4999</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Body -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card package-card shadow-lg h-100 text-center"
+          onclick="showPackage(
+            'Full Body Checkup',
+            'All major blood tests + ECG',
+            '₹4999',
+            '12 hours fasting required',
+            'images/healthpackage4.webp'
+          )">
+
+          <span class="badge bg-danger position-absolute top-0 end-0 m-2">Best Value</span>
+          <img src="images/healthpackage4.webp" class="card-img-top p-4">
+          <div class="card-body">
+            <h5 class="fw-bold">Full Body Checkup</h5>
+            <p class="text-muted small">Complete health analysis</p>
+            <p class="fw-bold text-primary">₹6999</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGE DETAILS  -->
+<section class="my-5 d-none" id="packageDetails">
+  <div class="container">
+    <div class="card shadow-xl border-0 rounded-5 p-4">
+      <div class="row align-items-center">
+
+        <div class="col-md-4 text-center">
+          <img id="pkgImg" class="img-fluid" style="max-height:200px">
+        </div>
+
+        <div class="col-md-8">
+          <h3 class="fw-bold text-primary" id="pkgName"></h3>
+
+          <ul class="list-unstyled fs-6 mt-3">
+            <li>✅ <strong>Includes:</strong> <span id="pkgIncludes"></span></li>
+            <li>💰 <strong>Price:</strong> <span id="pkgPrice"></span></li>
+            <li>⏱️ <strong>Preparation:</strong> <span id="pkgPrep"></span></li>
+          </ul>
+
+          <div class="mt-4">
+            <a href="#" class="cart-btn me-3" onclick="bookPackage()">
+              <span>bookPackage</span>
+          </a>
+
+           <a href="#" class="cart-btn" onclick="addMore()">
+         <span>Add Another Package</span>
+        </a>
+            
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  SCRIPT  -->
+<script>
+function showPackage(name, includes, price, prep, img) {
+  pkgName.innerText = name;
+  pkgIncludes.innerText = includes;
+  pkgPrice.innerText = price;
+  pkgPrep.innerText = prep;
+  pkgImg.src = img;
+
+  packageDetails.classList.remove("d-none");
+  packageDetails.scrollIntoView({ behavior: "smooth" });
+}
+
+function bookPackage() {
+  alert(" Health package booked successfully!");
+}
+
+function addMore() {
+  alert(" You can select another health package.");
+}
+</script>
+<!-- Footer section -->
+  <footer>
+    <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4"></div>
+        </div>
+      </div> -->
+    <span class="fw-semibold">&copy; PathoCare 2025 all rights reserved</span>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
