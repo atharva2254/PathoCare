@@ -7,7 +7,7 @@
 
 .test-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* IMAGE LOGICAL EFFECT */
@@ -21,11 +21,5 @@
 
 /* DETAILS CARD SHADOW */
 .shadow-xl {
-  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
-}
-
-/* NAV ACTIVE FIX */
-.nav-link.active {
-  font-weight: 600;
-  color: #000 !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
