@@ -1,9 +1,7 @@
 img {
   border-radius: 20px;
 }
-.navbar {
-  background: linear-gradient(to right, #dce35b, #45b649);
-}
+
 .active {
   color: lightgray;
 }
@@ -11,27 +9,24 @@ img {
 .card {
   box-shadow: 5px 5px 10px rgb(215, 213, 213);
 }
-.footer{
-    text-align: center;
-    background-color: aqua;
+
+.social_font {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 40px;
 }
-.social_font{
-    font-size: 50px;
-    margin-left: 20px;
-    margin-top: 40px;
+a {
+  text-decoration: none;
 }
-a{
-    text-decoration: none;
+.bi-whatsapp {
+  color: darkgreen;
 }
-.bi-whatsapp{
-    color: darkgreen;
+.bi-telegram {
+  color: darkblue;
+  font-size: 55px;
 }
-.bi-telegram{
-    color: darkblue;
-    font-size: 55px;
-}
-.bi-twitter-x{
-    color: black;
+.bi-twitter-x {
+  color: black;
 }
 .contact-banner {
   position: relative;
@@ -67,16 +62,15 @@ a{
   font-size: 18px;
   letter-spacing: 1px;
 }
-.f_family1{
+.f_family1 {
   font-size: 35px;
   text-align: center;
   font-family: monospace;
   color: black;
 }
-.f_family2{
+.f_family2 {
   font-size: 15px;
   text-align: center;
   font-family: monospace;
   text-transform: capitalize;
-
 }

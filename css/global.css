@@ -9,11 +9,106 @@
   background: linear-gradient(to right, #dce35b, #45b649);
 }
 
-footer {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: skyblue;
-  margin-top: 30px;
+.navbar img {
+  width: 320px;
+  height: 40px;
+}
+
+/* Footer Base */
+.pathocare-footer {
+  background-color: #1f2933; /* main dark */
+  color: #e5e7eb;
+}
+
+/* Text */
+.footer-text {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* Headings */
+.footer-heading {
+  color: #f9fafb;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Links */
+.footer-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #45b649; /* matches navbar green */
+  padding-left: 4px;
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Social Icons */
+.footer-social {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-social:hover {
+  color: #45b649;
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: zoomIn 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CTA Strip */
+.cta-strip {
+  background: linear-gradient(to right, #dce35b, #45b649);
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar img {
+    width: 250px;
+    height: 40px;
+  }
 }

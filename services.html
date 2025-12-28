@@ -1,69 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/services.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/services.css" />
+  </head>
+  <body>
     <!-- Navbar Starts -->
     <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-    <div class="container-fluid">
+      <div class="container-fluid fw-bold">
         <a class="navbar-brand" href="index.html">
-        <img src="images/pathocare_logo.png" alt="PathoCare" width="75" height="50" />
+          <img src="images/logo.png" alt="PathoCare" width="320" height="40" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="services.html">Tests/Services</a>
-            <!-- <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="book.html">Blood Test</a></li>
-                <li><a class="dropdown-item" href="book.html">Diabetes Test</a></li>
-                <li><a class="dropdown-item" href="book.html">Thyroid Test</a></li>
-                <li><a class="dropdown-item" href="book.html">Heart Test</a></li>
-            </ul> -->
+              <a class="nav-link active" href="services.html">Tests/Services</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="health.html">Health Packages</a>
+              <a class="nav-link" href="health.html">Health Packages</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="book.html">Book Test</a>
+              <a class="nav-link" href="book.html">Book Test</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
-        </ul>
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search Labs" aria-label="Search" />
-        </form>
+          </ul>
         </div>
-    </div>
-    <!-- navbar end -->
+      </div>
     </nav>
     <!-- main section start -->
     <main>
-        <div class="container">
-            <div class="row">
-                <h1 class="fw-bold serv">Our Services</h1>
-                <p class="text-muted mb-4">
-                    We provide accurate, reliable, and affordable laboratory testing services using
-                    advanced technology and expert professionals to ensure the best patient care.
+      <div class="container">
+        <div class="row">
+          <h1 class="fw-bold serv">Our Services</h1>
+          <p class="text-muted mb-4">
+            We provide accurate, reliable, and affordable laboratory testing
+            services using advanced technology and expert professionals to
+            ensure the best patient care.
+          </p>
+          <div class="col-md-6">
+            <h3>Blood Test</h3>
+            <img src="images/dt.jpg" alt="" class="img-fluid mb-2 img_gt" />
+          </div>
+          <div class="col-md-6">
+            <p class="text_t text-muted">
+              Blood testing plays a vital role in identifying diseases,
+              monitoring health conditions, and guiding proper medical
+              treatment. It involves laboratory analysis of blood, urine,
+              tissue, and other body samples to detect abnormalities at an early
+              stage.It involves laboratory analysis of blood, urine, tissue to
+              detect abnormalities at an early stage. Our diagnostic testing
+              services are performed using advanced equipment and follow strict
+              quality and safety standards to ensure accurate and reliable
+              results.
+            </p>
+            <a href="book.html" class="btn btn-success btn-md mt-2"
+              >Book This Test</a
+            >
+          </div>
+          <div class="col-md-6">
+            <h3>Diabetes Test</h3>
+            <img src="images/diab.webp" alt="" class="img-fluid mb-2 img_gt" />
+          </div>
+          <div class="col-md-6">
+            <p class="text-muted">
+              Diabetes test helps analyze chemical processes in the body by
+              examining blood, urine, and other body fluids. These tests are
+              essential for evaluating organ function, metabolism, and overall
+              health. Common biochemistry tests include blood liver function
+              tests (LFT), kidney function tests (KFT), and electrolyte
+              levels.These tests are essential for evaluating organ function and
+              health. These tests are essential for evaluating metabolism, and
+              overall health.
+            </p>
+            <a href="book.html" class="btn btn-success btn-md mt-2"
+              >Book This Test</a
+            >
+          </div>
+          <div class="col-md-6">
+            <h3>Thyroid Test</h3>
+            <img src="images/th.jpg" alt="" class="img-fluid mb-2 img_gt" />
+          </div>
+          <div class="col-md-6">
+            <p class="text-muted">
+              Thyroid test focuses on identifying microorganisms such as
+              bacteria, viruses, fungi, and parasites that cause infections in
+              the human body. These tests help doctors diagnose infectious
+              diseases accurately effective treatment. Our microbiology
+              laboratory uses advanced techniques and strict quality standards
+              to ensure precise and reliable results.Microbiology testing plays
+              a vital role in monitoring patient health and guiding clinical
+              decisions for faster recovery.
+            </p>
+            <a href="book.html" class="btn btn-success btn-md mt-2"
+              >Book This Test</a
+            >
+          </div>
+          <div class="col-md-6">
+            <h3>Heart Test</h3>
+            <img src="images/heart.webp" alt="" class="img-fluid mb-2 img_gt" />
+          </div>
+          <div class="col-md-6">
+            <p class="text-muted">
+              Heart test analyzes DNA and genes to identify inherited
+              conditions, genetic disorders, and disease risks. These tests help
+              in early diagnosis, prevention, and personalized treatment
+              planning. Using advanced laboratory technology, genetic testing
+              can detect gene mutations, chromosomal abnormalities, and
+              hereditary diseases. It is widely used for prenatal screening,
+              cancer risk assessment, and inherited disorder analysis.Using
+              advanced laboratory technology,and hereditary diseases.
+            </p>
+            <a href="book.html" class="btn btn-success btn-md mt-2"
+              >Book This Test</a
+            >
+          </div>
+          <div class="col-md-6">
+            <h3 class="f_size">Why Choose Our Lab</h3>
+            <ul class="list">
+              <li>NABL quality standards</li>
+              <li>Accurate & timely reports</li>
+              <li>Experienced technicians</li>
+              <li>Affordable pricing</li>
+              <li>Home sample collection</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="f_size">Quality & Safety Standards</h3>
+            <ul class="list">
+              <li>Strict hygiene & sterilization protocols</li>
+              <li>Barcode-based sample tracking</li>
+              <li>Internal & external quality control</li>
+              <li>Data privacy & report confidentiality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- new section start -->
+      <section class="container my-5">
+        <div class="text-center mb-5">
+          <h2 class="text-black fw-bold">🌍 Community Health Initiatives</h2>
+          <p class="fs-5 mt-2 text-muted">
+            We believe in building a healthier society through awareness, early
+            detection, and accessible diagnostic services.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card rounded-4">
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">🏥 Free Health Camps</h5>
+                <p class="card-text fs-6">
+                  Regular free and low-cost health check-up camps in
+                  communities, schools, and rural areas.
                 </p>
                 <div class="col-md-6">
                     <h3>Blood Test</h3>
@@ -121,100 +242,162 @@
                     <li> Data privacy & report confidentiality</li>
                 </ul>
                 </div> -->
+              </div>
             </div>
-        </div>
-    <!-- new section start -->
-    <section class="container my-5">
-    <div class="text-center mb-5">
-        <h2 class="text-black fw-bold">🌍 Community Health Initiatives</h2>
-        <p class="fs-5 mt-2 text-muted">
-            We believe in building a healthier society through awareness, early detection,
-            and accessible diagnostic services.
-        </p>
-    </div>
-    <div class="row g-4">
-    <!-- Card 1 -->
-        <div class="col-md-4">
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
             <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">🏥 Free Health Camps</h5>
-                    <p class="card-text fs-6">
-                        Regular free and low-cost health check-up camps in communities,
-                        schools, and rural areas.
-                    </p>
-                </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">👵 Senior Citizen Care</h5>
+                <p class="card-text fs-6">
+                  Special discounts, priority services, and home sample
+                  collection for elderly patients.
+                </p>
+              </div>
             </div>
-        </div>
-    <!-- Card 2 -->
-        <div class="col-md-4">
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
             <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">👵 Senior Citizen Care</h5>
-                    <p class="card-text fs-6">
-                        Special discounts, priority services, and home sample collection
-                        for elderly patients.
-                    </p>
-                </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">🎓 Student Awareness</h5>
+                <p class="card-text fs-6">
+                  Health awareness programs focusing on nutrition, immunity, and
+                  lifestyle-related diseases.
+                </p>
+              </div>
             </div>
-        </div>
-    <!-- Card 3 -->
-        <div class="col-md-4">
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-4">
             <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">🎓 Student Awareness</h5>
-                    <p class="card-text fs-6">
-                        Health awareness programs focusing on nutrition, immunity,
-                        and lifestyle-related diseases.
-                    </p>
-                </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">
+                  👩 Women's Health Drives
+                </h5>
+                <p class="card-text fs-6">
+                  Awareness and testing initiatives for anemia, thyroid, and
+                  hormonal health.
+                </p>
+              </div>
             </div>
-        </div>
-    <!-- Card 4 -->
-        <div class="col-md-4">
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-4">
             <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">👩 Women's Health Drives</h5>
-                    <p class="card-text fs-6">
-                        Awareness and testing initiatives for anemia, thyroid,
-                        and hormonal health.
-                    </p>
-                </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">
+                  🏢 Corporate Health Programs
+                </h5>
+                <p class="card-text fs-6">
+                  On-site diagnostic services and wellness programs for offices
+                  and industries.
+                </p>
+              </div>
             </div>
-        </div>
-    <!-- Card 5 -->
-        <div class="col-md-4">
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-4">
             <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">🏢 Corporate Health Programs</h5>
-                    <p class="card-text fs-6">
-                        On-site diagnostic services and wellness programs
-                        for offices and industries.
-                    </p>
-                </div>
+              <div class="card-body text-center p-4">
+                <h5 class="card-title text-success">🤝 Community Support</h5>
+                <p class="card-text fs-6">
+                  Affordable testing and guidance to promote preventive
+                  healthcare for all.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
-    <!-- Card 6 -->
-        <div class="col-md-4">
-            <div class="card rounded-4">
-                <div class="card-body text-center p-4">
-                    <h5 class="card-title text-success">🤝 Community Support</h5>
-                    <p class="card-text fs-6">
-                        Affordable testing and guidance to promote preventive
-                        healthcare for all.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!-- section end -->
-</main>
+      </section>
+      <!-- section end -->
+    </main>
     <!-- main section end -->
-    <footer>
-        <span class="fw-semibold">&copy; PathoCare 2025 all rights reserved</span>
+
+    <!-- Footer Section -->
+    <footer class="pathocare-footer pt-5">
+      <div class="container">
+        <div class="row">
+          <!-- Brand / About -->
+          <div class="col-md-4 mb-4">
+            <h4 class="fw-bold text-success">PathoCare</h4>
+            <p class="footer-text">
+              PathoCare delivers accurate and affordable diagnostic services
+              with modern labs and trusted medical professionals.
+            </p>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-2 mb-4">
+            <h6 class="footer-heading">Services</h6>
+            <ul class="list-unstyled">
+              <li><a href="book.html" class="footer-link">Blood Tests</a></li>
+              <li>
+                <a href="book.html" class="footer-link">Health Packages</a>
+              </li>
+              <li>
+                <a href="book.html" class="footer-link">Home Collection</a>
+              </li>
+              <li>
+                <a href="book.html" class="footer-link">Diagnostic Reports</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3 mb-4">
+            <h6 class="footer-heading">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="about.html" class="footer-link">About Us</a></li>
+              <li><a href="contact.html" class="footer-link">Contact</a></li>
+              <li><a href="#" class="footer-link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-md-3 mb-4">
+            <h6 class="footer-heading">Contact</h6>
+            <p class="footer-text mb-1">
+              <i class="bi bi-geo-alt-fill text-success"></i> Pune, Maharashtra
+            </p>
+            <p class="footer-text mb-1">
+              <i class="bi bi-telephone-fill text-success"></i> +91 98765 43210
+            </p>
+            <p class="footer-text">
+              <i class="bi bi-envelope-fill text-success"></i>
+              support@pathocare.com
+            </p>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Bottom Bar -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3"
+        >
+          <p class="mb-0 footer-text">© 2025 PathoCare. All rights reserved.</p>
+
+          <div>
+            <a href="https://facebook.com" class="footer-social me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://instagram.com" class="footer-social me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="https://linkedin.com" class="footer-social"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

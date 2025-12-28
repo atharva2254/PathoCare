@@ -1,0 +1,96 @@
+/* HERO */
+.services-hero {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #dce35b, #45b649);
+  color: #000;
+}
+
+.services-hero h1 span {
+  color: #1f2933;
+}
+
+.hero-subtext {
+  max-width: 650px;
+  margin: 15px auto;
+  font-size: 1.1rem;
+}
+
+.hero-badge {
+  background: #1f2933;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 50px;
+}
+
+/* SERVICE CARDS */
+.service-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card i {
+  font-size: 2.5rem;
+  color: #45b649;
+  margin-bottom: 15px;
+}
+
+/* WHY SECTION */
+.why-pathocare {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.why-point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.why-point i {
+  font-size: 1.4rem;
+  color: #45b649;
+  margin-right: 10px;
+}
+
+/* STATS */
+.stats-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stats-card h3 {
+  color: #45b649;
+  font-weight: bold;
+}
+
+/* CTA */
+.services-cta {
+  padding: 80px 20px;
+  background: #1f2933;
+  color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 70px 15px;
+  }
+
+  .stats-card {
+    padding: 25px;
+  }
+}
