@@ -58,7 +58,7 @@ h5{
 h3 {
   font-size: 25px;
   display: inline-block;
-  border-bottom: 3px solid lightgreen;
+  border-bottom: 3px solid rgb(75, 172, 75);
   padding-bottom: 4px;
   position: relative;
   top: 7px;
